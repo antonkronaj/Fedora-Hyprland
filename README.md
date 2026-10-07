@@ -111,7 +111,7 @@ https://github.com/user-attachments/assets/49bc12b2-abaf-45de-a21c-67aacd9bb872
 - NOTE: `curl` package is required before running this command
 
 ```bash
-sh <(curl -L https://raw.githubusercontent.com/LinuxBeginnings/Fedora-Hyprland/main/auto-install.sh)
+sh <(curl -L https://raw.githubusercontent.com/antonkronaj/Fedora-Hyprland/personal/auto-install.sh)
 ```
 
 ## ✨ to use this script
@@ -119,7 +119,7 @@ sh <(curl -L https://raw.githubusercontent.com/LinuxBeginnings/Fedora-Hyprland/m
 > clone this repo (latest commit only) to reduce file size download by using git. Change directory, make executable and run the script
 
 ```bash
-git clone --depth=1 https://github.com/LinuxBeginnings/Fedora-Hyprland.git ~/Fedora-Hyprland
+git clone --depth=1 -b personal https://github.com/antonkronaj/Fedora-Hyprland.git ~/Fedora-Hyprland
 cd ~/Fedora-Hyprland
 chmod +x install.sh
 ./install.sh

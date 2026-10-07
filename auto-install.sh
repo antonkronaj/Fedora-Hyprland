@@ -25,7 +25,7 @@ RESET="$(tput sgr0)"
 
 # Variables
 Distro="Fedora-Hyprland"
-Github_URL="https://github.com/LinuxBeginnings/$Distro.git"
+Github_URL="https://github.com/antonkronaj/$Distro.git"
 Distro_DIR="$HOME/$Distro"
 
 printf "\n%.0s" {1..1}
@@ -43,13 +43,13 @@ printf "\n%.0s" {1..1}
 if [ -d "$Distro_DIR" ]; then
     echo "${YELLOW}$Distro_DIR exists. Removing and performing a fresh clone... ${RESET}"
     rm -rf "$Distro_DIR"
-    git clone --depth=1 "$Github_URL" "$Distro_DIR"
+    git clone --depth=1 -b personal "$Github_URL" "$Distro_DIR"
     cd "$Distro_DIR"
     chmod +x install.sh
     ./install.sh
 else
     echo "${MAGENTA}$Distro_DIR does not exist. Cloning the repository...${RESET}"
-    git clone --depth=1 "$Github_URL" "$Distro_DIR"
+    git clone --depth=1 -b personal "$Github_URL" "$Distro_DIR"
     cd "$Distro_DIR"
     chmod +x install.sh
     ./install.sh

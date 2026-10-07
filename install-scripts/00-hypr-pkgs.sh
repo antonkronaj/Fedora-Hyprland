@@ -97,6 +97,7 @@ copr_packages=(
     pamixer
     awww
     wallust
+    starship
 )
 
 # List of packages to uninstall as it conflicts some packages
